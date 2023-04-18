@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3002;
 app.listen(PORT, ()=> console.log(`WE ARE RUNNING ON PORT ${PORT}!`));
 
 app.get('/', (request, response) => {
-  response.statusCode(200).send('Welcome To My Server!');
+  response.status(200).send('Welcome To My Server!');
 });
 
 app.get('/weather', async (request, response, next) => {
